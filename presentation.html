@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>GitHub Slideshow</title>
+
+  <link rel="stylesheet" href="/github-slideshow/node_modules/reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="/github-slideshow/node_modules/reveal.js/css/reset.css">
+  <link rel="stylesheet" href="/github-slideshow/node_modules/reveal.js/css/theme/moon.css">
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="/github-slideshow/node_modules/reveal.js/lib/css/monokai.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : '/github-slideshow/node_modules/reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section class="step slide">
+			  <h1>Welcome to our slide deck!</h1>
+			  
+			  <p>Use the right arrow to begin!</p>
+			</section>
+			<div class="page-break"></div>
+		</div>
+	</div>
+	
+	<script src="/github-slideshow/node_modules/reveal.js/js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			hash: true,
+			dependencies: [
+				{ src: '/github-slideshow/node_modules/reveal.js/plugin/markdown/marked.js' },
+				{ src: '/github-slideshow/node_modules/reveal.js/plugin/markdown/markdown.js' },
+				{ src: '/github-slideshow/node_modules/reveal.js/plugin/highlight/highlight.js' },
+				{ src: '/github-slideshow/node_modules/reveal.js/plugin/notes/notes.js', async: true }
+			]
+		});
+	</script>
+</body>
+</html>
